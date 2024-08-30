@@ -338,6 +338,7 @@ func stsCredentials(minioURL, accessKey, secretKey, location, clientIP string) (
 		AccessKey:       accessKey,
 		SecretKey:       secretKey,
 		Location:        location,
+		RoleARN:  "arn:aws:iam:::role/S3Access1",
 		DurationSeconds: int(xjwt.GetConsoleSTSDuration().Seconds()),
 	}
 	stsAssumeRole := &credentials.STSAssumeRole{
