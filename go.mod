@@ -1,4 +1,4 @@
-module github.com/minio/console
+module github.com/milkydan/console-testing
 
 go 1.22
 
